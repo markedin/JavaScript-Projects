@@ -4,16 +4,24 @@ function sliceMethod() { //This line defines a function called sliceMethod
     document.getElementById("Slice").innerHTML = Section;   //this line sets the HTML element "Slice" to the sliced string
 }
 
+
+function concatenate(){ // this line defines a function called concatenate
+    string1= "This is the first string and "; // this line defines a string
+    string2= "this is the second string concatenated together"; // this line defines a string
+    str= string1.concat(string2); // this line concatenates string 1 with string 2
+    document.getElementById("concat").innerHTML = str; // this line replaces the HTML element with the id concat with str
+}
+
 function upperCase(){   //this line defines a function called upperCase
-    string = "hello how are you?";  //this line defines a string callled "string"
+    string = "This string started as lower case";  //this line defines a string callled "string"
     upStr = string.toUpperCase();   // this line converts the string to upper case and stores it in upStr
-    document.write(upStr);  //this line writes the upStr to the doc when function is called 
+    document.getElementById("uppercase").innerHTML = upStr;  //this line writes the upStr to the HTML element with id uppercase
 }
 
 function searchFunction(){  // this line defines a function called searchFunction
     string = "A B C D E F G";   //this line defines a string 
     searchStr = string.search("D");     // this line searches for the position of "D" within the string "string"
-    console.log(searchStr); //this line writes the position of "D" within the browser console
+    document.getElementById("searchfunction").innerHTML = searchStr; //this line writes the position of "D" to the HTML element with id searchfunction
 }
 
 function num2str(){ // this line defines a function called num2str
