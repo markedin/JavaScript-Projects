@@ -22,23 +22,23 @@ function plusSlides(n) {        // this line defines a function called plusSlide
 }
 
 function currentSlide(n) {      // this line defines a function called current slide
-    showSlides(slideIndex = n);
+    showSlides(slideIndex = n);     // this line runs the showSlides function with a input of the current slideIndex = n
 }
 
-function showSlides(n) {
-    let i;
-    let slides = 
-    document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+function showSlides(n) {        // this line defines a function callled showSlides with an input of n
+    let i;      // this line defines i
+    let slides =        // this line defines slides equal to the index of HTML elements with class name mySlides
+    document.getElementsByClassName("mySlides");       //^^^^^^^^^^^^^^^^
+    let dots = document.getElementsByClassName("dot");       //this line defines dots equal to the index of HTML elements with class name dot
+    if (n > slides.length) {slideIndex = 1}     // this line is an if statement that checks if n is greater than the length of the slides index. if its true, set slideIndex = 1
+    if (n < 1) {slideIndex = slides.length}     // this line is an if statement that checks if n is less than 1, if its true it sets slideIndex = to the length of the slide index
+    for (i = 0; i < slides.length; i++) {       // this line is a for loop that starts with i = 0, and will continue to run as long as i < the length of the slides index
+        slides[i].style.display = "none";       // this line will "hide" the slides where slides[i] is equal to 
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "");
+    for (i = 0; i < dots.length; i++) {     // this line is a for loop that starts with i = 0, and will run while i < the length of the dots index
+        dots[i].className = dots[i].className.replace("active", "");        // this line will replace the current slide with whatever slide coresponding with a certain dot is clicked on 
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex -1].className += " active";
+    slides[slideIndex-1].style.display = "block";       // this line will cause the browser to not display the slides[] HTML element equal to the slideIndex - 1
+    dots[slideIndex -1].className += " active";     // this line will cause the browser to display the 
 }
 

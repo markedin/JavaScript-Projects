@@ -1,0 +1,42 @@
+/*THIS CONTAINER INCLUDES OUR TABLES AND OUR CANVAS.*/
+.center-container {
+    /*THIS PROPERTY SETS THE WIDTH OF OUR CONTAINER.*/
+    width:608px;
+    /* THIS CENTERS OUR CONTAINER*/
+    margin: 0 auto;
+    /* THIS SETS IT 50 PX DOWN FROM TOP */
+    margin-top:50px;
+}
+
+table {
+    /* THIS COLLAPSES TABLE BORDER INTO 1 BORDER*/
+    border-collapse: collapse;
+    /* THIS HIDES OUTER BORDERS ON TABLE.*/
+    border-style: hidden;
+}
+
+td {
+    /*THIS CHANGES THE CURSOR TO AN INDEX FINGER WHEN HOVERING OVER TD ELEMENTS*/
+    cursor: pointer;
+    /*THIS SETS OUR TABLE BORDER STYLE*/
+    border: 4px solid purple;
+    /*THIS REMOVES DEFAULT PADDING*/
+    padding:0px;
+    width:200px;
+    height:200px;
+    filter: contrast(3);
+}
+
+canvas {
+    /*THIS SETS THE POSITION OF OUR CANVAS TO THE TOP LEFT CORNER OF THE CONTAINER*/
+    position: absolute;
+    /*THIS SETS CANVAS ON TOP OF OUR TABLE*/
+    z-index: 10;
+    /*THIS MAKES OUR CANVAS INVISABLE*/
+    pointer-events: none;
+}
+
+h1 {
+    /*THIS CENTERS THE H1 ELEMENT(S)*/
+    text-align: center;
+}
